@@ -1,6 +1,28 @@
 # budget_tracker_app
 
-A new Flutter project.
+This Budget Tracker App is designed to help you efficiently manage and track your finances. Built using Flutter and the GetX package for state management, it provides a seamless and intuitive user experience.
+
+# Features :
+## Category Management: 
+Easily categorize your expenses with predefined categories like Travelling, Salary, Rent, and more.
+## Expense Tracking: 
+Add and update your expenses with details such as amount, notes, date, time, payment method, and type.
+## Data Persistence: 
+Your financial data is stored locally using SQLite, ensuring that your history remains intact even after closing the app.
+## Custom UI: 
+Enjoy a visually appealing interface with a custom gradient theme and smooth animations.
+## Notifications: 
+Receive custom snack bar notifications for successful budget updates and additions.
+## Date and Time Selection: 
+Conveniently select and edit dates and times for your transactions.
+# Technology Stack
+## Flutter: 
+For building the cross-platform app.
+## GetX: 
+For efficient state management and navigation.
+## SQLite: 
+For local data storage.
+
 
 ## Getting Started
 
