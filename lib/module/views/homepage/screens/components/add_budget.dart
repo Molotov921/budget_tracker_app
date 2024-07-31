@@ -91,7 +91,6 @@ class AddBudget extends StatelessWidget {
                                 lastDate: DateTime(2025),
                                 initialDate: homePageController.dateTime,
                               );
-
                               homePageController.selectDate(selectDate);
                             },
                             icon: const Icon(Icons.date_range),
@@ -114,7 +113,6 @@ class AddBudget extends StatelessWidget {
                                 context: context,
                                 initialTime: homePageController.timeOfDay,
                               );
-
                               homePageController.selectTime(selectTime);
                             },
                             icon: const Icon(Icons.timer),
@@ -221,7 +219,7 @@ class AddBudget extends StatelessWidget {
                             );
                           },
                         ),
-                        const Text("Expence", style: TextStyle(fontSize: 16)),
+                        const Text("Expense", style: TextStyle(fontSize: 16)),
                       ],
                     ),
                   ],
@@ -242,7 +240,9 @@ class AddBudget extends StatelessWidget {
                       SizedBox(
                         width: 160,
                         child: DropdownButtonFormField(
-                          value: null,
+                          value: homePageController.selCategory.value.isEmpty
+                              ? null
+                              : homePageController.selCategory.value,
                           decoration: const InputDecoration(
                             border: InputBorder.none,
                             hintText: "Select Category",
